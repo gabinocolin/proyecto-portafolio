@@ -1,3 +1,18 @@
+/* Tipografía */
+@font-face {
+  font-family: "freizeit";
+  src: url("../assets/fonts/Freizeit-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "freizeit-light";
+  src: url("../assets/fonts/Freizeit-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100;
+}
+
 /****************************************
 *    Variables
 *****************************************/
@@ -7,9 +22,8 @@
   --primary: #0366ee;
   --link: #0000ee;
   --hover: #551a8b;
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  --font-family: "freizeit";
+  --font-family-light: "freizeit-light";
 }
 
 /****************************************
@@ -129,6 +143,11 @@ ul {
   padding: 2em 2em 0 2em;
 }
 
+/* Contacto */
+.contacto {
+  background: rebeccapurple;
+}
+
 /****************************************
 *    Helpers
 *****************************************/
@@ -144,6 +163,5 @@ ul {
 }
 
 /* Notas */
-/* Tipografía*/
 /* Mich: SVG Logo */
 /* Listado de proyectos */
