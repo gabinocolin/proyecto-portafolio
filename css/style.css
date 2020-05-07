@@ -144,8 +144,55 @@ ul {
 }
 
 /* Contacto */
-.contacto {
-  background: rebeccapurple;
+.site-container.contacto .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10vh;
+}
+
+@media screen and (min-width: 40em) {
+  .site-container.contacto .menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    writing-mode: vertical-rl;
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+  }
+}
+
+.contacto-container {
+  height: 100%;
+  padding-left: 5.1vw;
+}
+
+.contacto-container img {
+  margin-top: 15vh;
+  margin-bottom: 2vh;
+  max-width: 100px;
+}
+@media screen and (min-width: 40em) {
+  .site-container.contacto .menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    writing-mode: vertical-rl;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+  }
+
+  .contacto-container {
+    min-height: 100%;
+    margin-top: -70vh;
+  }
+
+  .contacto-container img {
+    margin: 0;
+    max-width: 100px;
+  }
 }
 
 /****************************************
