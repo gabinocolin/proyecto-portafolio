@@ -42,7 +42,7 @@ body {
 }
 
 a {
-  color: black;
+  color: rgb(0, 255, 0);
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease-in;
@@ -50,7 +50,7 @@ a {
 
 a:hover,
 a:active {
-  color: rgb(0, 255, 0);
+  /* opacity: 0.8; */
   text-decoration: none;
 }
 
@@ -94,6 +94,15 @@ ul {
   justify-content: space-around;
   height: 10vh;
 }
+
+.menu a {
+  color: #000000;
+}
+
+/*
+.menu a:hover {
+}
+*/
 
 @media screen and (min-width: 40em) {
   .menu {
@@ -151,16 +160,10 @@ ul {
   height: 10vh;
 }
 
-@media screen and (min-width: 40em) {
-  .site-container.contacto .menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    writing-mode: vertical-rl;
-    width: 100%;
-    height: 20vh;
-    text-align: center;
-  }
+.contacto-container img {
+  margin-top: 15vh;
+  margin-bottom: 2vh;
+  max-width: 100px;
 }
 
 .contacto-container {
@@ -168,30 +171,39 @@ ul {
   padding-left: 5.1vw;
 }
 
-.contacto-container img {
-  margin-top: 15vh;
-  margin-bottom: 2vh;
-  max-width: 100px;
+.contacto .tagline {
+  display: none;
 }
+
 @media screen and (min-width: 40em) {
+  .contacto {
+    position: relative;
+    max-height: 100vh;
+    overflow-x: hidden;
+  }
+
   .site-container.contacto .menu {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     writing-mode: vertical-rl;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     text-align: center;
+    overflow: hidden;
   }
 
   .contacto-container {
-    min-height: 100%;
-    margin-top: -70vh;
+    position: absolute;
+    top: 80px;
+    left: 60px;
   }
 
-  .contacto-container img {
-    margin: 0;
-    max-width: 100px;
+  .contacto .tagline {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(10%);
   }
 }
 
