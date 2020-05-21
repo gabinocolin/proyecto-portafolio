@@ -208,6 +208,35 @@ ul {
 }
 
 /****************************************
+*    R+S
+*****************************************/
+.rs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 120px;
+  width: 100%;
+}
+
+.proyecto-rs {
+  background: lightslategray;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+}
+
+.proyecto-rs a {
+  all: unset;
+  text-align: center;
+}
+
+.proyecto-rs h2 {
+}
+
+.proyecto-rs p {
+}
+
+/****************************************
 *    Helpers
 *****************************************/
 .centrar {
