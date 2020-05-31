@@ -238,6 +238,17 @@ ul {
   font-size: 16px;
 }
 
+.rs1 {
+  border: 3px solid red;
+  transition: all 0.4s ease-out;
+
+  /* transform: rotate(-15deg); */
+}
+
+.rs1:hover {
+  transform: rotate(-8deg);
+}
+
 .imagenes-proyecto img:not(:first-child) {
   margin: 1em 0;
 }
@@ -247,6 +258,7 @@ ul {
   font-size: 12px;
 }
 
+/* Esto de aqui solo aplica a la version desktop */
 @media screen and (min-width: 40em) {
   .proyectos.proyecto {
     display: flex;
