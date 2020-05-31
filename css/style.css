@@ -201,12 +201,12 @@ ul {
   flex-direction: column;
   max-width: 80%;
   margin: 0 auto;
-  background-color: lightblue;
+  background-color: black;
 }
 
 .proyectos-container a {
-  border: 1px solid black;
-  color: black;
+  border: 1px solid white;
+  color: white;
   padding: 3em 0;
 }
 
@@ -240,6 +240,11 @@ ul {
 
 .imagenes-proyecto img:not(:first-child) {
   margin: 1em 0;
+}
+
+.ficha {
+  font-family: Freizeit-Light;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 40em) {
